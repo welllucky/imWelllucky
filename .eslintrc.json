@@ -10,7 +10,10 @@
     "react-hooks",
     "prettier",
     "react",
-    "typescript"
+    "typescript",
+    "prettier/@typescript-eslint",
+    "prettier/react",
+    "prettier/prettier"
   ],
   "root": true,
   "rules": {
@@ -29,7 +32,7 @@
     "node": true,
     "es6": true
   },
-  "globals": {
-    "React": "writable"},
-    "ignorePatterns": ["node_modules/", "build/", ".next/", "!.prettierrc.js", "!.eslintrc.json", "!.babelrc"],
+  "globals": {"React": "writable"},
+
+  "ignorePatterns": ["node_modules/", "build/", ".next/", "!.prettierrc.js", "!.eslintrc.json", "!.babelrc"]
 }
