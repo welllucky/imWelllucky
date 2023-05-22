@@ -1,3 +1,2 @@
-
-  import { precacheAndRoute } from 'workbox-precaching/precacheAndRoute';
-  precacheAndRoute([]);
+import { precacheAndRoute } from "workbox-precaching/precacheAndRoute";
+precacheAndRoute([]);

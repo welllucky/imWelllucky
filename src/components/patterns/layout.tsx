@@ -12,11 +12,11 @@ const Layout = ({
   img?: StaticImageData,
 }) => {
   return (
-    <FlexContainer
-      data-cy="flex-container-layout"
-    >
+    <FlexContainer data-cy="flex-container-layout">
       <Header />
-      <ContentContainer data-cy="content-container-layout">{children}</ContentContainer>
+      <ContentContainer data-cy="content-container-layout">
+        {children}
+      </ContentContainer>
       {/* <Footer /> */}
     </FlexContainer>
   );

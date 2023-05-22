@@ -78,7 +78,10 @@ const TextContainer = styled.div`
   }
 `;
 
-const TextureDecorator = styled.div<ImageProps>`
+const TextureDecorator =
+  styled.div <
+  ImageProps >
+  `
   position: absolute;
   width: 100vw;
   height: 60vh;
