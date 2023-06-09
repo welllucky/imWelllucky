@@ -1,18 +1,17 @@
 import Layout from "@/components/patterns/layout";
 import Image from "@/components/patterns/ImageComponent";
-import HomeBackground from "../src/assets/imgs/HomeBackground.png";
-import WellingtonBraga from "../src/assets/imgs/WellingtonBraga.png";
-import Octogonals from "../src/assets/imgs/Octogonals.png";
-import ExpandArrow from "../src/assets/icons/img/ExpandArrow.png";
+import HomeBackground from "@/assets/imgs/HomeBackground.png";
+import WellingtonBraga from "@/assets/imgs/WellingtonBraga.png";
+import Octogonals from "@/assets/imgs/Octogonals.png";
+import ExpandArrow from "@/assets/icons/img/ExpandArrow.png";
 import {
   BackgroundImage,
   BottomContent,
   ContentContainer,
   GradientWrapper,
   TextContainer,
-  TextureDecorator,
   LabelIconText,
-} from "../pages/Home/style";
+} from "@/styles/Home/style";
 
 const Home = () => {
   return (

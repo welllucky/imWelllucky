@@ -8,4 +8,4 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   );
 }
-import { GlobalStyle } from "./global";
+import { GlobalStyle } from "../src/styles/global";
