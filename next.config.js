@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   compiler: {
-    // see https://styled-components.com/docs/tooling#babel-plugin for more info on the options.
     styledComponents: true,
-    removeConsole: true,
+    removeConsole: process.env.NODE_ENV === "development" ? true : false,
   },
   reactStrictMode: true,
   eslint: {
@@ -33,10 +32,11 @@ const nextConfig = {
 
 const witchPWA = require("next-pwa")({
   dest: "public",
-  disable: process.env.NODE_ENV === "development",
+  disable: false,
+  // disable: process.env.NODE_ENV === "development",
   register: true,
   scope: this.basePath,
-  sw: "sw.js",
+  sw: "./public/sw.js",
 });
 
 module.exports = witchPWA(nextConfig);

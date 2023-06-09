@@ -1,4 +1,5 @@
 {
+  "id": "imWellluckY",
   "name": "imWellluckY",
   "short_name": "Poritfólio do Well",
   "start_url": "/",
@@ -9,6 +10,7 @@
   "theme_color": "#FFCE00",
   "background_color": "#0a0a09",
   "orientation": "portrait-primary",
+  "display_override": "fullscreen",
   "icons": [
     {
       "src": "https://www.pwabuilder.com/assets/icons/icon_512.png",
@@ -26,5 +28,6 @@
   "screenshots": [{}],
   "related_applications": [{}],
   "prefer_related_applications": false,
-  "shortcuts": [{}]
+  "shortcuts": [{}],
+  "iarc_rating_id": "e58c174a-81d2-5c3c-32cc-34b8de4a52e9"
 }
