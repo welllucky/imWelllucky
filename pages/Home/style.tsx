@@ -78,13 +78,43 @@ const TextContainer = styled.div`
   }
 `;
 
-const TextureDecorator = styled.div<ImageProps>`
+const TextureDecorator =
+  styled.div <
+  ImageProps >
+  `
   position: absolute;
   width: 100vw;
-  height: 60vh;
+  height: 10vh;
   top: 90%;
   left: 0;
   background-image: url(${({ img }) => img?.src});
+`;
+
+const BottomContent =
+  styled.div <
+  ImageProps >
+  `
+  position: absolute;
+  width: 100vw;
+  height: 12vh;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  gap: .6rem;
+  background-image: url(${({ img }) => img?.src});
+`;
+
+const LabelIconText = styled.p`
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 `;
 
 export {
@@ -93,4 +123,6 @@ export {
   ContentContainer,
   TextureDecorator,
   TextContainer,
+  BottomContent,
+  LabelIconText,
 };

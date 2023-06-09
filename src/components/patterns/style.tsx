@@ -11,6 +11,7 @@ const FlexContainer = styled.div`
   height: 100vh;
   width: 100vw;
   z-index: 100;
+  background-color: #141412;
 `;
 
 const ContentContainer = styled.main`
