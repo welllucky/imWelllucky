@@ -32,11 +32,10 @@ const nextConfig = {
 
 const witchPWA = require("next-pwa")({
   dest: "public",
-  disable: false,
-  // disable: process.env.NODE_ENV === "development",
+  disable: process.env.NODE_ENV === "development",
   register: true,
   scope: this.basePath,
-  sw: "./public/sw.js",
+  sw: "sw.js",
 });
 
 module.exports = witchPWA(nextConfig);
