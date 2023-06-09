@@ -85,6 +85,7 @@ const TextureDecorator =
   position: absolute;
   width: 100vw;
   height: 10vh;
+  height: 10vh;
   top: 90%;
   left: 0;
   background-image: url(${({ img }) => img?.src});

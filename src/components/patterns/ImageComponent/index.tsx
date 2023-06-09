@@ -14,6 +14,7 @@ const Image =
   ImageProps >
   `
     position: ${({ position }) => position ?? "absolute"};
+    position: ${({ position }) => position ?? "absolute"};
     background-image: url(${({ img }) => img?.src});
     width: ${({ width }) => width};
     height: ${({ height }) => height};
