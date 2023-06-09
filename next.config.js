@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  compiler: {
+    // see https://styled-components.com/docs/tooling#babel-plugin for more info on the options.
+    styledComponents: true,
+    removeConsole: true,
+  },
   reactStrictMode: true,
   eslint: {
     dirs: ["src"],
@@ -12,7 +17,7 @@ const nextConfig = {
     if (!isServer) {
       config.resolve.fallback.fs = false;
     }
-    
+
     config.module.rules.push({
       test: /\.svg$/,
       use: ["@svgr/webpack"],

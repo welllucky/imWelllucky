@@ -6,13 +6,14 @@ type ImageProps = {
   width?: string,
   height?: string,
   alt?: string,
+  position?: string,
 };
 
 const Image =
-  styled.image <
+  styled.img <
   ImageProps >
   `
-    position: absolute;
+    position: ${({ position }) => position ?? "absolute"};
     background-image: url(${({ img }) => img?.src});
     width: ${({ width }) => width};
     height: ${({ height }) => height};
