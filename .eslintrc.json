@@ -23,7 +23,7 @@
     "no-unused-vars": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/prop-types": "warn",
+    "react/prop-types": "warn"
   },
   "overrides": [
   ],
@@ -33,6 +33,5 @@
     "es6": true
   },
   "globals": {"React": "writable"},
-
   "ignorePatterns": ["node_modules/", "build/", ".next/", "!.prettierrc.js", "!.eslintrc.json", "!.babelrc"]
 }
