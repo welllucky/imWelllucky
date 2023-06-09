@@ -1,12 +1,10 @@
 import { ReactNode } from "react";
 import Header from "./Header";
-import Footer from "./Footer";
 import { FlexContainer, ContentContainer } from "./style";
 import { StaticImageData } from "next/image";
 
 const Layout = ({
   children,
-  img,
 }: {
   children: ReactNode,
   img?: StaticImageData,

@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import styled from "styled-components";
 
 const FlexContainer = styled.div`
