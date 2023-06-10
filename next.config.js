@@ -2,40 +2,40 @@
 const nextConfig = {
   compiler: {
     styledComponents: true,
-    removeConsole: process.env.NODE_ENV === "development" ? true : false,
+    removeConsole: process.env.NODE_ENV === 'development'
   },
   reactStrictMode: true,
   eslint: {
-    dirs: ["src"],
+    dirs: ['src']
   },
   images: {
-    path: "/public/images/",
-    deviceSizes: [320, 420, 768, 1024, 1200, 1920, 2048, 3840],
+    path: '/public/images/',
+    deviceSizes: [320, 420, 768, 1024, 1200, 1920, 2048, 3840]
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {
-      config.resolve.fallback.fs = false;
+      config.resolve.fallback.fs = false
     }
 
     config.module.rules.push({
       test: /\.svg$/,
-      use: ["@svgr/webpack"],
-    });
+      use: ['@svgr/webpack']
+    })
 
-    return config;
+    return config
   },
   env: {
-    API_URL: process.env.API_URL,
+    API_URL: process.env.API_URL
   },
-  optimizeFonts: true,
-};
+  optimizeFonts: true
+}
 
-const witchPWA = require("next-pwa")({
-  dest: "public",
-  disable: process.env.NODE_ENV === "development",
+const witchPWA = require('next-pwa')({
+  dest: 'public',
+  disable: process.env.NODE_ENV === 'development',
   register: true,
   scope: this.basePath,
-  sw: "sw.js",
-});
+  sw: 'sw.js'
+})
 
-module.exports = witchPWA(nextConfig);
+module.exports = witchPWA(nextConfig)
