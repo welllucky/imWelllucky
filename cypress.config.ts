@@ -1,7 +1,7 @@
 import { defineConfig } from "cypress";
 
 export default defineConfig({
-  projectId: 'zc1t5t',
+  projectId: "zc1t5t",
   experimentalMemoryManagement: true,
   watchForFileChanges: true,
   viewportWidth: 1280,
@@ -17,7 +17,7 @@ export default defineConfig({
   execTimeout: 60000,
   taskTimeout: 60000,
   e2e: {
-    specPattern: ["**/e2e/**/*.int.cy.ts", '**/e2e/**/*.e2e.cy.ts'],
+    specPattern: ["**/e2e/**/*.int.cy.ts", "**/e2e/**/*.e2e.cy.ts"],
   },
   component: {
     devServer: {
