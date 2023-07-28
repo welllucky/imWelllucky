@@ -36,3 +36,5 @@ next-env.d.ts
 
 # TurboRepo
 .turbo
+
+.env
