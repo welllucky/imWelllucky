@@ -1,0 +1,52 @@
+{
+  "name": "wcl",
+  "version": "1.0.0",
+  "description": "Welllucky's Components Library",
+  "main": "index.ts",
+  "author": "Wellington Braga",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@storybook/addon-essentials": "^7.1.1",
+    "@storybook/addon-interactions": "^7.1.1",
+    "@storybook/addon-links": "^7.1.1",
+    "@storybook/addon-mdx-gfm": "^7.1.1",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.1.1",
+    "@storybook/nextjs": "^7.1.1",
+    "@storybook/react": "^7.1.1",
+    "@storybook/testing-library": "^0.2.0",
+    "@testing-library/cypress": "^9.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@types/react": "^18.2.17",
+    "babel-jest": "^29.6.2",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^2.1.4",
+    "cypress": "^12.17.2",
+    "jest": "^29.6.2",
+    "jest-styled-components": "^7.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-test-renderer": "^18.2.0",
+    "rollup": "^3.26.3",
+    "storybook": "^7.1.1",
+    "typescript": "^5.1.6",
+    "typescript-plugin-styled-components": "^3.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "styled-components": "^6.0.5",
+    "styled-theming": "^2.2.0"
+  },
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "deploy": "rollup -c"
+  }
+}
