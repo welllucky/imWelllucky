@@ -1,0 +1,17 @@
+{
+  "name": "test-config",
+  "version": "0.5.2",
+  "main": "index.js",
+  "license": "MIT",
+  "files": [
+    "jest-next.js",
+    "jest-react.js"
+  ],
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5"
+  },
+  "devDependencies": {
+    "esbuild": "^0.15.15",
+    "esbuild-jest": "^0.5.0"
+  }
+}
