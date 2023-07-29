@@ -4,7 +4,8 @@
   "private": true,
   "workspaces": [
     "packages/*",
-    "apps/*"
+    "apps/*",
+    "tests/*"
   ],
   "author": {
     "email": "maxwellucas.wl@gmail.com",
@@ -55,9 +56,11 @@
   "devDependencies": {
     "@babel/preset-react": "^7.22.5",
     "@svgr/webpack": "^8.0.1",
+    "@testing-library/cypress": "^9.0.0",
     "@typescript-eslint/eslint-plugin": "^5.59.9",
     "@typescript-eslint/parser": "^5.59.9",
     "babel-plugin-styled-components": "^2.1.4",
+    "cypress": "^12.17.2",
     "eslint": "^8.42.0",
     "eslint-config-next": "13.3.1",
     "jest": "^29.5.0",
