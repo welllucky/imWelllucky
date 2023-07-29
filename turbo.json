@@ -6,16 +6,22 @@
       "dependsOn": ["^build"]
     },
     "deploy": {
-        "dependsOn": ["build", "test", "lint"]
+      "dependsOn": ["build", "test", "lint"]
     },
     "test": {
-        "dependsOn": ["build"],
-        "inputs": ["src/**/*tsx", "src/**/*ts", "test/**/*spec.tsx", "test/**/*spec.js"]
+      "dependsOn": ["build", "lint"],
+      "inputs": [
+        "src/**/*.tsx",
+        "src/**/*.ts",
+        "src/**/*.js",
+        "tests/component/**/*.cy.tsx",
+        "tests/e2e/**/*.cy.js"
+      ]
     },
     "lint": {},
     "dev": {
-        "cache": false,
-        "persistent": true
+      "cache": false,
+      "persistent": true
     }
   }
 }
