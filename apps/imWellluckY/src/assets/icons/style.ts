@@ -1,7 +1,10 @@
-import styled from 'styled-components'
-import { IconProps } from "../types"
+import styled from "styled-components";
+import { IconProps } from "../types";
 
-const IconWrapper = styled.div<IconProps>`
+const IconWrapper =
+  styled.div <
+  IconProps >
+  `
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,6 +16,6 @@ const IconWrapper = styled.div<IconProps>`
     width: ${({ width }) => width || "2.4rem"};
     alt: ${({ alt }) => alt || "Icon"};
     }
-`
+`;
 
-export default IconWrapper
+export default IconWrapper;
