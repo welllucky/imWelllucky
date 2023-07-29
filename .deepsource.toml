@@ -1,5 +1,22 @@
 version = 1
 
+test_patterns = [
+  "*.spec.ts",
+  "*.spec.tsx",
+  "*.spec.js",
+  "*.spec.jsx",
+  "tests/cypress/component/**/*.e2e.cy.tsx",
+  "tests/cypress/pages/**/*.e2e.cy.js",
+  "tests/cypress/integration/**/*.e2e.cy.tsx"
+]
+
+exclude_patterns = [
+  "node_modules/*",
+  ".next/*",
+  "build/*",
+  "dist/*"
+]
+
 [[analyzers]]
 name = "secrets"
 
@@ -17,6 +34,3 @@ name = "javascript"
     "nodejs",
     "browser"
   ]
-
-[[transformers]]
-name = "prettier"
