@@ -1,0 +1,30 @@
+{
+  "name": "im-resources",
+  "version": "0.5.2",
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint *.ts* ./**/*.[ts,tsx]* --fix",
+    "test": "yarn jest"
+  },
+  "dependencies": {
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "styled-components": "^5.3.5",
+    "typing": "*",
+    "tsconfig": "*"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@jest/globals": "^29.6.0",
+    "@types/jest": "^29.5.2",
+    "@types/js-cookie": "^3.0.2",
+    "eslint": "^7.32.0",
+    "eslint-config": "*",
+    "jest": "^29.6.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "4.7.4"
+  }
+}
