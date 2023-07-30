@@ -1,69 +1,19 @@
 {
-  "root": true,
   "parser": "@typescript-eslint/parser",
-  "ignorePatterns": [
-    "node_modules/",
-    "build/",
-    ".next/",
-    "!.prettierrc.js",
-    "!.eslintrc.json",
-    "!.babelrc"
-  ],
-  "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
-  "env": {
-    "browser": true,
-    "node": true,
-    "es6": true,
-    "jest": true
-  },
-  "globals": {
-    "React": true,
-    "jsdom": true,
-    "JSX": true,
-    "BodyInit": true,
-    "RequestInfo": true,
-    "RequestInit": true
-  },
-  "settings": {
-    "next": {
-      "rootDir": "apps/imWellluckY/"
-    },
-    "react": {
-      "version": "detect"
-    },
-    "import/resolver": {
-      "node": {
-        "extensions": [".ts", ".tsx"]
-      }
-    }
-  },
-  "plugins": ["@typescript-eslint", "jest"],
-  "extends": [
-    "eslint:recommended",
-    "next/core-web-vitals",
-    "plugin:@typescript-eslint/recommended",
-    "airbnb",
-    "plugin:jsx-a11y/recommended",
-    "plugin:prettier/recommended",
-    "plugin:sonarjs/recommended",
-    "plugin:security/recommended",
-    "plugin:react/recommended",
-    "plugin:react/jsx-runtime",
-    "plugin:react-hooks/recommended",
-    "plugin:cypress/recommended",
-    "next",
-    "turbo",
+  "plugins": [
     "react-hooks",
     "react",
-    "prettier"
+    "@typescript-eslint", 
+    "jest"
   ],
   "rules": {
+    "camelcase": "warn",
+    "no-console": "warn",
+    "no-debugger": "warn",
+    "no-unused-vars": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "warn",
     "@next/next/no-html-link-for-pages": ["warn", "apps/**/pages"],
     "@typescript-eslint/no-unused-vars": "error",
     "react/jsx-filename-extension": [
@@ -73,7 +23,6 @@
       }
     ],
     "react/jsx-props-no-spreading": "off",
-    "react/prop-types": "off",
     "react/require-default-props": "off",
     "import/extensions": [
       "error",
@@ -118,7 +67,6 @@
       }
     ],
     "no-nested-ternary": "off",
-    "no-console": "error",
     "import/prefer-default-export": "off",
     "react/function-component-definition": [
       2,
@@ -132,11 +80,78 @@
       {
         "ignore": ["jsx"]
       }
+    ]
+  },
+  "overrides": [
+  ],
+    "root": true,
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true,
+      "jest": true
+    },
+    "globals": {
+      "React": true,
+      "jsdom": true,
+      "JSX": true,
+      "BodyInit": true,
+      "RequestInfo": true,
+      "RequestInit": true
+    },
+    "settings": {
+      "next": {
+        "rootDir": "apps/*/"
+      },
+      "react": {
+        "version": "detect"
+        // version: "latest",
+      },
+      "import/resolver": {
+        "node": {
+          "extensions": [".ts", ".tsx"]
+        }
+      },
+      "import/no-unresolved": [
+        "never", 
+        { "caseSensitive": false,
+          "ignore": false,
+          "caseSensitiveStrict": false }
+     ],
+     "import/extensions": [
+      "never",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+    },
+    "extends": [
+      "eslint:recommended",
+      "next/core-web-vitals",
+      "plugin:@typescript-eslint/recommended",
+      "airbnb",
+      "plugin:jsx-a11y/recommended",
+      "plugin:prettier/recommended",
+      "plugin:sonarjs/recommended",
+      "plugin:security/recommended",
+      "plugin:react/recommended",
+      "plugin:react/jsx-runtime",
+      "plugin:react-hooks/recommended",
+      "plugin:cypress/recommended",
+      "next",
+      "turbo"
+      // "prettier",
     ],
-    "camelcase": "error",
-    "no-debugger": "warn",
-    "no-unused-vars": "error",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
-  }
+  "ignorePatterns": ["node_modules/", "build/", ".next/", "!.prettierrc.js", "!.eslintrc.json", "!.babelrc"]
 }
