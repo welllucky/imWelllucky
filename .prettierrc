@@ -12,10 +12,5 @@
   "parser": "babel",
   "singleQuote": false,
   "bracketSpacing": true,
-  "quoteProps": "consistent",
-  "editorconfig": false,
-  "trailingComma": "all",
-  "htmlWhitespaceSensitivity": "css",
-  "insertPragma": false,
-  "proseWrap": "preserve"
+  "quoteProps": "as-needed"
 }

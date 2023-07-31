@@ -1,0 +1,10 @@
+{
+  "name": "theme",
+  "version": "1.0.0",
+  "files": ["index.tsx"],
+  "description": "imWellluckY themes library",
+  "main": "index.tsx",
+  "author": "Wellington Braga",
+  "license": "MIT",
+  "private": true
+}

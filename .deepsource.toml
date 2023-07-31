@@ -1,10 +1,20 @@
 version = 1
 
-[[analyzers]]
-name = "secrets"
+test_patterns = [
+  "*.spec.ts",
+  "*.spec.tsx",
+  "*.spec.jsx",
+  "tests/**",
+  "*.int.cy.ts",
+  "*.comp.cy.ts",
+  "*.e2e.cy.ts"
+]
 
-[[analyzers]]
-name = "test-coverage"
+exclude_patterns = [
+  "node_modules/*",
+  ".next/*",
+  "public/*"
+]
 
 [[analyzers]]
 name = "javascript"
@@ -12,11 +22,12 @@ name = "javascript"
   [analyzers.meta]
   plugins = ["react"]
   environment = [
-    "jest",
-    "cypress",
     "nodejs",
-    "browser"
+    "cypress"
   ]
 
 [[transformers]]
 name = "prettier"
+
+[[transformers]]
+name = "standardjs"
