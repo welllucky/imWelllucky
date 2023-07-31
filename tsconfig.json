@@ -42,7 +42,7 @@
     "**/*.tsx",
     "src/",
     "../../packages/components/react/Footer"
-  ],
+, "packages/components/jest.config.js"  ],
   "exclude": [
     "node_modules"
   ]

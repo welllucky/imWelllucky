@@ -1,0 +1,32 @@
+{
+  "name": "application",
+  "version": "0.0.0",
+  "main": "./index.tsx",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint \"**/*.ts*\""
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "eslint": "8.46.0",
+    "swr": "^2.2.0",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@jest/globals": "^29.6.2",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.3",
+    "babel-jest": "^29.6.2",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "jest": "^29.6.2",
+    "jest-environment-jsdom": "^29.6.2",
+    "react-test-renderer": "^18.2.0",
+    "tsconfig": "*",
+    "typescript": "^4.5.2"
+  }
+}
