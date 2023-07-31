@@ -1,12 +1,15 @@
 {
-  "name": "components",
-  "version": "0.0.0",
-  "main": "./index.tsx",
-  "types": "./index.tsx",
-  "license": "MIT",
+  "name": "im-welllucky",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "lint": "eslint \"**/*.ts*\"",
-    "generate:component": "turbo gen react-component"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint && stylelint '*.tsx' --fix",
+    "test": "jest",
+    "cypress:run": "cypress run",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "@types/node": "20.4.5",
@@ -14,37 +17,38 @@
     "@types/react-dom": "18.2.7",
     "@types/styled-components": "^5.1.26",
     "axios": "^1.4.0",
+    "components": "*",
     "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "styled-components": "^6.0.5",
     "swr": "^2.2.0",
     "theme": "*",
-    "typescript": "5.1.6"
+    "typescript": "5.1.6",
+    "application": "*"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
     "@jest/globals": "^29.6.2",
+    "@testing-library/cypress": "^9.0.0",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.3",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
     "babel-jest": "^29.6.2",
-    "eslint": "^7.32.0",
+    "babel-plugin-styled-components": "^2.1.4",
+    "cypress": "^12.17.2",
     "eslint-config-custom": "*",
     "jest": "^29.6.2",
     "jest-environment-jsdom": "^29.6.2",
     "jest-styled-components": "^7.1.1",
     "postcss-styled-syntax": "^0.4.0",
-    "react": "^17.0.2",
     "react-test-renderer": "^18.2.0",
     "styled-theming": "^2.2.0",
     "stylelint": "^15.10.2",
     "stylelint-config-standard": "^34.0.0",
-    "test-config": "*",
-    "tsconfig": "*",
-    "typescript": "^4.5.2"
+    "tsconfig": "*"
   }
 }

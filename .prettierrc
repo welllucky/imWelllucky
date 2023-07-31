@@ -1,6 +1,6 @@
 {
   "tabWidth": 2,
-  "useTabs": true,
+  "useTabs": false,
   "semi": true,
   "endOfLine": "auto",
   "singleAttributePerLine": true,
@@ -12,10 +12,5 @@
   "parser": "babel",
   "singleQuote": false,
   "bracketSpacing": true,
-  "quoteProps": "consistent",
-  "editorconfig": false,
-  "trailingComma": "all",
-  "htmlWhitespaceSensitivity": "css",
-  "insertPragma": false,
-  "proseWrap": "preserve"
+  "quoteProps": "as-needed"
 }
