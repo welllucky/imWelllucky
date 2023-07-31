@@ -1,22 +1,22 @@
-const jestReactConfig = require("test-config/jest-react");
+const jestReactConfig = require('test-config/jest-react')
 
 /** @type {import('jest').Config} */
 const customJestConfig = {
-  rootDir: "./",
+  rootDir: './',
   automock: true,
   bail: 5,
   clearMocks: true,
   collectCoverage: true,
-  coverageDirectory: "coverage",
-  coverageProvider: "v8",
-  notifyMode: "failure-change",
+  coverageDirectory: 'coverage',
+  coverageProvider: 'v8',
+  notifyMode: 'failure-change',
   notify: true,
-  testEnvironment: "jsdom",
+  testEnvironment: 'jsdom',
   fakeTimers: {
-    "enableGlobally": false
+    enableGlobally: false
   },
   ...jestReactConfig,
-  displayName: "Components Package Tests",
-};
+  displayName: 'Components Package Tests'
+}
 
-module.exports = customJestConfig;
+module.exports = customJestConfig

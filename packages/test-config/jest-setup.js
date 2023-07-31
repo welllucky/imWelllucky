@@ -1,5 +1,5 @@
-import "@testing-library/jest-dom";
-import "@testing-library/jest-dom/extend-expect";
+import '@testing-library/jest-dom'
+import '@testing-library/jest-dom/extend-expect'
 
 // wellington.braga verificar a solução abaixo e ver se achamos uma melhor
 
@@ -9,12 +9,12 @@ window.matchMedia =
     return {
       matches: false,
       addListener: () => jest.fn(),
-      removeListener: () => jest.fn(),
-    };
-  });
+      removeListener: () => jest.fn()
+    }
+  })
 
 afterEach(() => {
-  jest.useRealTimers();
-});
+  jest.useRealTimers()
+})
 
-jest.setTimeout(30000);
+jest.setTimeout(30000)

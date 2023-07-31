@@ -13,7 +13,7 @@ const customJestConfig = {
   notify: true,
   testEnvironment: "jsdom",
   fakeTimers: {
-    "enableGlobally": false
+    enableGlobally: false,
   },
   ...jestReactConfig,
   displayName: "I'm WellluckY Application Tests",
