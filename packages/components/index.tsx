@@ -1,4 +1,4 @@
 import * as React from "react";
 
 // component exports
-export * from "./Patterns";
+export * from "./src/patterns";

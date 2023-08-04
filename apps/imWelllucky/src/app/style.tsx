@@ -1,7 +1,9 @@
 "use client";
 import { styled } from "styled-components";
+import { theme } from "theme";
 
-export const FlexContainer = styled.div`
+export const FlexContainer = styled.div<
+{ isDark?: boolean } >`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

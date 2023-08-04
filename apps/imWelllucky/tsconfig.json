@@ -5,7 +5,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "../../packages/components/src/next.tsx"  ],
   "exclude": [
     "node_modules"
   ],

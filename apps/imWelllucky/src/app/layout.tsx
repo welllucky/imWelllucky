@@ -23,6 +23,29 @@ export const metadata: Metadata = {
 	applicationName: "I'm Welllucky",
 };
 
+const navItems = [
+	{
+		title: "Quem sou eu",
+		url: "/",
+	},
+	{
+		title: "Conhecimentos",
+		url: "/",
+	},
+	{
+		title: "Projetos",
+		url: "/",
+	},
+	{
+		title: "Trabalhos",
+		url: "/",
+	},
+	{
+		title: "Entrar em contato",
+		url: "/",
+	},
+];
+
 export default function RootLayout({
 	children,
 }: {
@@ -34,8 +57,11 @@ export default function RootLayout({
 			className={inter.className}
 		>
 			<body>
-				<Header />
-				<FlexContainer>{children}</FlexContainer>
+				<Header
+					logo="/next.svg"
+					navItems={navItems}
+				/>
+				<FlexContainer isDark={true}>{children}</FlexContainer>
 			</body>
 		</html>
 	);
