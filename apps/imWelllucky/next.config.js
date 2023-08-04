@@ -10,27 +10,27 @@
 // });
 
 const nextConfig = {
-	compiler: {
-		styledComponents: true,
-		removeConsole: process.env.NODE_ENV === "development" ? true : false,
-	},
-	transpilePackages: [
-		"application",
-		"components",
-		"eslint-config-custom",
-		"test-config",
-		"theme",
-		"tsconfig",
-	],
-	// basePath: "/imWelllucky",
-	images: {
-		path: "/public/images/",
-		deviceSizes: [320, 420, 768, 1024, 1200, 1920, 2048, 3840],
-	},
-	experimental: {
-		serverComponentsExternalPackages: ["theme"],
-	},
-};
+  compiler: {
+    styledComponents: true,
+    removeConsole: process.env.NODE_ENV === 'development'
+  },
+  transpilePackages: [
+    'application',
+    'components',
+    'eslint-config-custom',
+    'test-config',
+    'theme',
+    'tsconfig'
+  ],
+  // basePath: "/imWelllucky",
+  images: {
+    path: '/public/images/',
+    deviceSizes: [320, 420, 768, 1024, 1200, 1920, 2048, 3840]
+  },
+  experimental: {
+    serverComponentsExternalPackages: ['theme']
+  }
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
 // module.exports = withPWA({ ...nextConfig });

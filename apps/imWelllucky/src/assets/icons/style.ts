@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { IconProps } from "@/typing";
 
 const IconWrapper =
-  styled.div <
-  IconProps >
-  `
+	styled.div <
+	IconProps >
+	`
   display: flex;
   align-items: center;
   justify-content: center;
