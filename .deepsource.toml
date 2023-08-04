@@ -25,9 +25,3 @@ name = "javascript"
     "nodejs",
     "cypress"
   ]
-
-[[transformers]]
-name = "prettier"
-
-[[transformers]]
-name = "standardjs"
