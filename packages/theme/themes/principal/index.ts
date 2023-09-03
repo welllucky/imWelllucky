@@ -164,4 +164,4 @@ const theme = {
   },
 };
 
-export { theme };
+export { theme, getDevices, size };

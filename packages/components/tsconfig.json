@@ -1,6 +1,6 @@
 {
   "extends": "tsconfig/react-library.json",
-  "include": [".", "../test-config"],
+  "include": [".", "../test-config", "../typing/IconProps"],
   "exclude": ["dist", "build", "node_modules"],
   "compilerOptions": {
     "paths": {
